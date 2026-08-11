@@ -1,1 +1,1 @@
-echo "Testing";
+console.log('Server running");
