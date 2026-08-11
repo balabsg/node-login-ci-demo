@@ -31,7 +31,7 @@ jobs:
 
     # 3. Clean install of exact dependencies from package-lock.json
     - name: Install dependencies
-      run: npm ci
+      run: npm install
 
     # 4. Executes test script (runs 'jest' inside the package.json config)
     - name: Run Integration Tests
