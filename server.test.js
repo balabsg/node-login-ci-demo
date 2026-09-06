@@ -5,7 +5,7 @@ describe('POST /api/login', () => {
     it('should successfully login with valid credentials', async () => {
         const res = await request(app)
             .post('/api/login')
-            .send({ username: 'admin', password: 'password123' });
+            .send({ username: 'admin', password: 'password1234' });
         
         expect(res.statusCode).toEqual(200);
         expect(res.body).toHaveProperty('token');
