@@ -10,7 +10,7 @@ app.post('/api/login', (req, res) => {
         return res.status(400).json({ error: "Missing credentials" });
     }
     
-    if (username === "admin" && password === "password1234") {
+    if (username === "admin" && password === "password123") {
         return res.status(200).json({ token: "fake-jwt-token" });
     }
     
